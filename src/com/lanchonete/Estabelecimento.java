@@ -1,5 +1,10 @@
 package com.lanchonete;
 
+import com.lanchonete.area.cliente.Cliente;
+import com.lanchonete.atendimento.cozinha.Almoxarife;
+import com.lanchonete.atendimento.Atendente;
+import com.lanchonete.atendimento.cozinha.Cozinheiro;
+
 public class Estabelecimento {
 
     public static void main(String[] args) {
@@ -8,11 +13,11 @@ public class Estabelecimento {
 
         //acao que nao precisa estar disponivel a toda aplicacao
 
-        cozinheiro.lavarIngredientes();
-        cozinheiro.baterVitaminasLiquidificador();
-        cozinheiro.selecionarIngredientesVitamina();
-        cozinheiro.prepararLanche();
-        cozinheiro.prepararVitamina();
+        //cozinheiro.lavarIngredientes();
+        //cozinheiro.baterVitaminasLiquidificador();
+        //cozinheiro.selecionarIngredientesVitamina();
+        //cozinheiro.prepararLanche();
+        //cozinheiro.prepararVitamina();
 
         //acao que o estabelecimento precisa ter ciencia
 
@@ -26,20 +31,21 @@ public class Estabelecimento {
 
         //acoes que nao precisam estar disponiveis a toda aplicacao
 
-        almoxarife.controlarEntrada();
-        almoxarife.controlarSaida();
+        //almoxarife.controlarEntrada();
+        //almoxarife.controlarSaida();
         //acao que somente o seu pacote cozinha precisa conhecer default
 
-        almoxarife.entregarIngredientes();
-        almoxarife.trocarGas();
+        //almoxarife.entregarIngredientes();
+        //almoxarife.trocarGas();
 
         Atendente atendente = new Atendente();
-        atendente.pegarLancheCozinha();
-        atendente.receberPagamento();
         atendente.servindoMesa();
+        //atendente.pegarLancheCozinha();
+        atendente.receberPagamento();
+
         //acao que somente o seu pacote cozinha precisa conhecer default
 
-        atendente.trocarGas();
+        //atendente.trocarGas();
 
         //cliente
         Cliente cliente = new Cliente();
@@ -49,14 +55,15 @@ public class Estabelecimento {
 
         //nao deveria mais o estabelecimento ainda nao definiu as normas de atendimento
 
-        cliente.pegarPedidoBalcao();
+       //cliente.pegarPedidoBalcao();
 
         //esta acao e muito sigilosa,
-        cliente.consultarSaldoAplicativo();
+        //cliente.consultarSaldoAplicativo();
 
         //ja pensou os cliente ouvindo que o gás acabou
-        cozinheiro.pedirParaTrocarGas(atendente);
-        cozinheiro.pedirParaTrocarGas(almoxarife);
+        //cozinheiro.pedirParaTrocarGas(atendente);
+        //cozinheiro.pedirParaTrocarGas(almoxarife);
+
 
     }
 }

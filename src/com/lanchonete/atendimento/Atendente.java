@@ -1,15 +1,15 @@
-package com.lanchonete;
+package com.lanchonete.atendimento;
 
 public class Atendente {
 
     public void servindoMesa() {
-
+        pegarLancheCozinha();
         System.out.println("SERVINDO A MESA");
 
 
     }
 
-    public void pegarLancheCozinha() {
+    private void pegarLancheCozinha() {
 
         System.out.println("PEGANDO LANCHE NA COZINHA");
     }
@@ -19,12 +19,12 @@ public class Atendente {
         System.out.println("RECEBENDO PAGAMENTO");
     }
 
-    public void trocarGas() {
+    void trocarGas() {
 
         System.out.println("ATENDENTE TROCANDO O GAS");
     }
 
-    public void pegarPedidoBalcao() {
+    private void pegarPedidoBalcao() {
 
         System.out.println("PEGANDO PEDIDO NO BALCAO");
     }
